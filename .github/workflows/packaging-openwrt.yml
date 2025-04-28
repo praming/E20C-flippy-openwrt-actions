@@ -13,7 +13,7 @@ on:
       openwrt_soc:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "e20c"
         type: choice
         options:
           - all
@@ -102,15 +102,15 @@ on:
       builder_name:
         description: "Set OpenWrt builder signature."
         required: false
-        default: "ophub"
+        default: "praming"
         type: choice
         options:
           - ophub
           - angel
-          - yourname
+          - praming
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Shanghai
 
 jobs:
   build:
